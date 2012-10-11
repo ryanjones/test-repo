@@ -10,4 +10,4 @@ ssh_options[:forward_agent] = true
 
 after 'deploy:update', 'bundle:install'
 after 'deploy:update', 'deploy:assets:precompile'
-after 'deploy:restart', 'unicorn:reload'
+#after 'deploy:restart', 'unicorn:reload'
