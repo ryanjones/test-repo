@@ -1,7 +1,7 @@
 require 'capistrano-deploy'
 use_recipes :git, :bundle, :rails, :unicorn, :rails_assets
 
-server '50.116.0.17', :web, :app, :db, :primary => true
+server '50.116.11.124', :web, :app, :db, :primary => true
 set :user, 'deploy'
 set :deploy_to, '/home/deploy/yourapplication/current'
 set :repository, 'git@github.com:RyanonRails/test-repo.git'

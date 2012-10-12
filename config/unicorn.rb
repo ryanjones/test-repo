@@ -36,7 +36,7 @@ pid "/home/deploy/#{application}/current/tmp/pids/unicorn.pid"
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
 stderr_path "/home/deploy/#{application}/current/log/unicorn.stderr.log"
-stdout_path "/home/deploy#{application}/current/log/unicorn.stdout.log"
+stdout_path "/home/deploy/#{application}/current/log/unicorn.stdout.log"
 
 # combine REE with "preload_app true" for memory savings
 # http://rubyenterpriseedition.com/faq.html#adapt_apps_for_cow
